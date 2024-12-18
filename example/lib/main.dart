@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           theme: ThemeData(
             primarySwatch: Colors.blue,
           ),
-          home: Home(),
+          home: Container(child: Home()),
         );
       },
       maxTabletWidth: 900, // Optional

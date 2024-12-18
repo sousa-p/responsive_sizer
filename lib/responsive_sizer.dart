@@ -1,10 +1,15 @@
 library responsive_sizer;
 
-import 'dart:math';
+/// Extensions
+export 'src/extensions/ui_not_rebuildable_units_extension.dart';
+export 'src/extensions/ui_rebuildable_units_extension.dart';
+export 'src/extensions/ui_screen_sizes_extension.dart';
 
-import 'package:flutter/foundation.dart' show defaultTargetPlatform, kIsWeb;
-import 'package:flutter/widgets.dart';
+/// Helpers
+export 'src/helpers/types/device_type.dart';
+export 'src/helpers/types/screen_type.dart';
+export 'src/helpers/adaptive.dart';
+export 'src/helpers/device.dart';
 
-part 'src/extension.dart';
-part 'src/helper.dart';
-part 'src/widget.dart';
+/// Widgets
+export 'src/widgets/resposive_sizer_widget.dart';

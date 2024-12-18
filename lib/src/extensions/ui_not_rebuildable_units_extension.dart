@@ -1,6 +1,8 @@
-part of '../responsive_sizer.dart';
+import 'dart:math';
 
-extension DeviceExt on num {
+import 'package:responsive_sizer/src/helpers/device.dart';
+
+extension UINotRebuildableUnits on num {
   //  *****************  Absolute length units *****************************************
   // https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
 
@@ -27,13 +29,6 @@ extension DeviceExt on num {
 
   //  *****************  Relative length units *****************************************
   // https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units
-
-  // TODO Recursive units need to be implemented
-  /*double get em => ;
-  double get ex => ;
-  double get ch => ;
-  double get rem => ;
-  double get lh => ;*/
 
   /// Respective percentage of the viewport's smaller dimension.
   double get vmin => this * min(Device.height, Device.width) / 100;
